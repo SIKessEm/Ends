@@ -1,0 +1,23 @@
+{
+    "name": "@~sikessem/omninf",
+    "version": "1.0.0",
+    "description": "A full-stack tool for Web developers",
+    "main": "client/index.js",
+    "license": "Apache-2.0",
+    "author": "SIGUI Kessé Emmanuel <sikessem@omninf.com> (https://sikessem.omninf.com)",
+    "scripts": {
+        "serve": "php -S localhost:3331 web.php"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SIKessEm/Ends.PHP.git"
+    },
+    "keywords": [
+        "ends",
+        "sikessem"
+    ],
+    "bugs": {
+        "url": "https://github.com/SIKessEm/Ends.PHP/issues"
+    },
+    "homepage": "https://github.com/SIKessEm/Ends.PHP#readme"
+}
