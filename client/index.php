@@ -4,6 +4,8 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 $script = new Script('index');
 
-$script->put('Hello world !');
+$script->let('app_name', 'Ends');
+
+$script->put('Welcome to ' . $script->get('app_name') . ' !');
 
 $script->end();
