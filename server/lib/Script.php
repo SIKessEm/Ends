@@ -16,12 +16,45 @@ class Script {
    */
   public function __construct(protected string $name) {}
 
-    /**
-     * Put a content into output
-     *
-     * @param  string $content The content to put
-     * @return void
-     */
+  /**
+   * @var array The list of the script vars
+   */
+  protected array $vars = [];
+
+  /**
+   * @return array The list of the script vars
+   */
+  public function vars(): array {
+    return $this->vars;
+  }
+
+  /**
+   * Declare a variable
+   *
+   * @param  string $name The variable name
+   * @return self
+   */
+  public function let(string $name, mixed $value = null): self {
+    $this->vars[$name] = $value;
+    return $this;
+  }
+
+  /**
+   * Get a declared variable
+   *
+   * @param  string $name The variable name
+   * @return mixed        The variable value
+   */
+  public function get(string $name): mixed {
+    return $this->vars[$name] ?? null;
+  }
+
+  /**
+   * Put a content into output
+   *
+   * @param  string $content The content to put
+   * @return void
+   */
   public function put(string $content): void {
     echo $content;
   }
