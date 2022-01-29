@@ -1,23 +1,37 @@
 {
-    "name": "@~sikessem/omninf",
-    "version": "1.0.0",
-    "description": "A full-stack tool for Web developers",
+    "name": "@ends/ends",
+    "version": "0.0.0",
+    "description": "A powerful tool to make HTML, CSS and JavaScript in a very simple way from a PHP script",
     "main": "client/index.js",
     "license": "Apache-2.0",
-    "author": "SIGUI Kessé Emmanuel <sikessem@omninf.com> (https://sikessem.omninf.com)",
+    "author": "SIGUI Kessé Emmanuel <developer@sikessem.com> (https://about.sikessem.com)",
     "scripts": {
         "serve": "php -S localhost:3331 web.php"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SIKessEm/Ends.PHP.git"
+        "url": "git+https://github.com/SIKessEm/Ends.git"
     },
     "keywords": [
         "ends",
-        "sikessem"
+        "script",
+        "style",
+        "html",
+        "sass",
+        "scss",
+        "css",
+        "website",
+        "web page",
+        "homepage",
+        "sikessem",
+        "ske"
     ],
     "bugs": {
-        "url": "https://github.com/SIKessEm/Ends.PHP/issues"
+        "url": "https://github.com/SIKessEm/Ends/issues"
     },
-    "homepage": "https://github.com/SIKessEm/Ends.PHP#readme"
+    "homepage": "https://github.com/SIKessEm/Ends#readme",
+    "dependencies": {
+        "sass": "^1.49.0",
+        "typescript": "^4.5.5"
+    }
 }
